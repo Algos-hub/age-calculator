@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="date">
+          <div class="date-day">
+            <span class="err dd">D A Y</span><br />
+            <input type="number" id="day" min="1" max="31" placeholder="DD" />
+            <span class="err d"></span>
+          </div>
+          <div class="date-month">
+            <span class="err mm">M O N T H</span><br />
+            <input type="number" id="month" min="1" max="12" placeholder="MM" />
+            <span class="err m"></span>
+          </div>
+          <div class="date-year">
+            <span class="err yy">Y E A R</span><br />
+            <input type="number" id="year" min="1970" placeholder="YYYY" />
+            <span class="err y"></span>
+          </div>
+        </div>
+        <div>
+          <button class="check">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <section class="current--age">
+          <p><span class="age years">--</span> years</p>
+          <p><span class="age months">--</span> months</p>
+          <p><span class="age days">--</span> days</p>
+        </section>
+      </div>
+      <script src="script.js"></script>
+      <!--
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div> -->
+    </main>
+  </body>
+</html>

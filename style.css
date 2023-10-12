@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(".assets/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  background-attachment: cover;
+}
+
+main {
+  font-family: "Poppins", s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 650px;
+  width: 840px;
+  border-radius: 25px;
+  border-bottom-right-radius: 250px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.date {
+  margin-left: 25px;
+  margin-top: 25px;
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 2px solid hsl(0, 0%, 86%);
+  width: 50vw;
+}
+
+.date-day,
+.date-month,
+.date-year {
+  margin-left: 25px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+button {
+  height: 45px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin-left: 675px;
+  margin-top: -45px;
+}
+
+svg {
+  height: 45px;
+  width: 45px;
+  background-color: hsl(259, 100%, 65%);
+  border: 20px solid hsl(259, 100%, 65%);
+  border-radius: 100%;
+}
+
+svg:hover {
+  background-color: black;
+  border: 20px solid black;
+  transition: 0.5s;
+}
+
+.age {
+  color: hsl(259, 100%, 65%);
+}
+
+#day,
+#month,
+#year {
+  width: 150px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-size: 32px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.err {
+  color: hsl(0, 1%, 44%);
+  font-size: 12px;
+}
+
+.d,
+.m,
+.y {
+  display: flex;
+  color: hsl(0, 100%, 67%);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 70px;
+  margin-left: 50px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-style: italic;
+}
